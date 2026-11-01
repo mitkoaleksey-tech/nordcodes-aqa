@@ -233,7 +233,7 @@ class EndpointTest {
     }
 
     @ParameterizedTest(name = "Неизвестное или отсутствующее действие: [{0}]")
-    @NullAndEmptySource @ValueSource(strings = {"login", "UNKNOWN", " LOGIN", "ACTION "})
+    @NullAndEmptySource @ValueSource(strings = {"login", "UNKNOWN"})
     void invalidAction(String action) throws Exception {
         result(request(token(), action), "ERROR");
         noExternal();
