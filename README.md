@@ -11,7 +11,9 @@ mvn clean test
 
 Приложение и WireMock запускаются и останавливаются автоматически. Лог приложения — `target/app.log`.
 
-Открыть отчёт после запуска:
+Готовый отчёт: [скачать HTML](https://github.com/mitkoaleksey-tech/nordcodes-aqa/raw/refs/heads/main/allure-report.html). Скачайте файл и откройте его в браузере.
+
+Открыть отчёт после своего запуска:
 
 ```shell
 mvn allure:serve
